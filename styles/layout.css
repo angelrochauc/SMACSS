@@ -1,0 +1,39 @@
+/*
+    En este archivo van los estilos que forman la estructura general, en otras palabras, los mayores componentes de la estructura, como encabezados, menú, barras laterales, pie de página.
+
+    Se suele utilizar el prefijo l- en estos estilos.
+
+    En nuestro caso solo tenemos el encabezado, los bloques de texto y el pie.
+*/
+
+.l-encabezado {
+    margin: 0 0 25px 0;
+    padding: 25px 0 25px 0;
+    text-align: center;
+}
+
+.l-texto-inicial {
+    width: 70%;
+    margin: 50px auto 50px auto;
+}
+
+.l-texto-final {
+    width: 70%;
+    margin: 50px auto 50px auto;
+}
+
+.l-pie {
+    height: 150px;
+    margin: 50px 0 0 0;
+    padding: 25px 0 150px 0;
+}
+
+.l-texto-pie {
+    width: 70%;
+    margin: 25px auto 25px auto;
+}
+
+.l-linea-final p {
+    font-size: 80%;
+    text-align: center;
+}

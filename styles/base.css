@@ -1,0 +1,37 @@
+/*
+    En este archivo van los estilos base, con selectores de elementos HTML.
+
+    Por lo general aquí se ponen el código para reiniciar los estilos que vienen por defecto en los navegadores,
+    esto es conocido como Normalize o Reset.
+
+    En nuestro caso hacemos dos estilos para normalizar y uno para ocultar los inputs, como parte de nuestro efecto
+    en el módulo acordeón.
+*/
+
+html,
+body,
+p,
+ul,
+li,
+form {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    text-align: justify;
+    line-height: 1.2;
+    font-size: 110%;
+}
+
+h1,
+h2,
+h3 {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-weight: bolder;
+    text-align: center;
+}
+
+input {
+    display: none;
+}

@@ -1,0 +1,22 @@
+/*
+    En este archivo van colores y fuentes, por lo general se suele usar mucho para páginas con múltiples temas,
+    en donde el usuario tiene la opción de escoger.
+
+    El autor de SMACSS también aclara que muchas veces no suele ser necesario,
+
+    En nuestro caso, utilizamos un tema general, uno para el encabezado y otro para el pie.
+*/
+
+.tema-general {
+    background-color: #6d597a;
+    color: #ffffff;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.tema-encabezado {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.tema-pie {
+    background-color: rgba(255, 255, 255, 0.2);
+}

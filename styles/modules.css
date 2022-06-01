@@ -1,0 +1,55 @@
+/*
+    En este archivo van los estilos de componentes menores, como formularios, tarjetas.
+    
+    En nuestro caso el acordeón e imágenes son estos componentes.
+*/
+
+.imagen {
+    margin: 0 0 50px 0;
+}
+
+.imagen img {
+    border: black 2px solid;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.ejemplo {
+    display: none;
+    position: fixed;
+    z-index: 99;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 5px 5px 1px 5px;
+}
+
+.acordeon {
+    width: 70%;
+    margin: auto;
+}
+
+.acordeon .texto-acordeon {
+    margin: 0 auto;
+    height: 0;
+    color: rgba(0, 0, 0, 0);
+    background-color: rgba(255, 255, 255, 0.2);
+    line-height: 28px;
+    padding: 0 20px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+
+.acordeon label {
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    display: block;
+    padding: 15px;
+    width: 100%;
+    color: #fff;
+    font-weight: 400;
+    box-sizing: border-box;
+    z-index: 100;
+}

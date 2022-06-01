@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Estilos organizados con la metodologia SMACSS -->
+    <link rel="stylesheet" href="styles\base.css">
+    <link rel="stylesheet" href="styles\theme.css">
+    <link rel="stylesheet" href="styles\layout.css">
+    <link rel="stylesheet" href="styles\state.css">
+    <link rel="stylesheet" href="styles\modules.css">
+    <!-- Archivos externos adicionales  -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <title>SMACSS</title>
+</head>
+
+<body class="tema-general">
+    <!-- DIV para el encabezado -->
+    <div class="l-encabezado tema-encabezado">
+        <h1>Metodología SMACSS</h1>
+        <h3>Organizando CSS</h3>
+    </div>
+    <!--  -->
+    <!-- DIV para el texto inicial -->
+    <div class="l-texto-inicial">
+        <p>Las Metodologías o Arquitecturas CSS nos ayudaran a escribir código CSS más predecible, reutilizable, mantenible y escalable.</p>
+        <br>
+        <p>A continuación, un breve resumen de la metodología <strong>SMACSS</strong> la cual es una de las más usadas para organizar nuestros estilos CSS:</p>
+        <br>
+        <p><strong>SMACSS</strong> (pronunciado “smacks”) es la sigla de Scalable and Modular Architecture for CSS y es una metodología CSS que tiene como objetivo que el código CSS sea mejor, más fácil de leer y modular.
+        </p>
+        <br>
+        <p>Bootstrap, Fundation y muchos otros frameworks se basan en <strong>SMACSS</strong> para definir sus estructuras.
+        </p>
+        <br>
+        <p>De acuerdo con el autor de la metodología <strong>SMACSS</strong>, <i>Jonathan Snook</i>, el considera su documento como una guía, más que algo estricto para seguir al pie de la letra. En palabras de Snook:
+        </p>
+        <br>
+        <p>“Es una guía de estilo más que un marco rígido. Es una forma de examinar su proceso de diseño y una forma de encajar esos marcos rígidos en un proceso de pensamiento flexible. Es un intento de documentar un enfoque consistente para el desarrollo
+            del sitio cuando se usa CSS."</p>
+        <br>
+        <p>En alguna parte de su documento, <i>Jonathan Snook</i>, enfatiza: "Siéntase libre de utilizar esto en su totalidad o solo las partes que funcionen mejor para usted. O de no usarlo en absoluto. Cuando se trata de desarrollo web, la respuesta a
+            la mayoría de las preguntas es: <i>depende</i>".</p>
+        <br>
+        <p>En <strong>SMACSS</strong>, se separan los elementos en las siguientes categorías:</p>
+    </div>
+    <!--  -->
+    <!-- DIV para la imagen complementaria -->
+    <div class="imagen">
+        <img src="images/smacss.png" alt="">
+    </div>
+    <!--  -->
+    <!-- DIV para el acordeón -->
+    <div class="acordeon">
+        <div>
+            <input type="radio" name="iacordeon" id="iacordeon1">
+            <label for="iacordeon1">Base</label>
+            <div class="texto-acordeon">
+                Son los elementos base de una página web, los elementos HTML como body, h1 o a, también conocidos como selectores de tipo (no clases, no ID).
+                <a onclick="mostrarImagen('base')" class="enlace">Ejemplo</a>
+            </div>
+        </div>
+        <div>
+            <input type="radio" name="iacordeon" id="iacordeon2">
+            <label for="iacordeon2">Layout</label>
+            <div class="texto-acordeon">
+                Se divide la página en varias secciones de estructura como header, sidebar, content o footer. Forman la estructura de la página. Los estilos de layout se preceden con l- para distinguirlos de los módulos.
+                <a onclick="mostrarImagen('layout')" class="enlace">Ejemplo</a>
+            </div>
+        </div>
+        <div>
+            <input type="radio" name="iacordeon" id="iacordeon3">
+            <label for="iacordeon3">Modules</label>
+            <div class="texto-acordeon">
+                son los elementos que forman la página. Los componentes que se repiten a lo largo de la página o aplicación.
+                <a onclick="mostrarImagen('module')" class="enlace">Ejemplo</a>
+            </div>
+        </div>
+        <div>
+            <input type="radio" name="iacordeon" id="iacordeon4">
+            <label for="iacordeon4">State</label>
+            <div class="texto-acordeon">
+                Modifican el aspecto de los elementos en comportamientos en situaciones con interactividad como oculto, expandido, modificado o con errores. Los estilos se preceden con .is-.
+                <a onclick="mostrarImagen('state')" class="enlace">Ejemplo</a>
+            </div>
+        </div>
+        <div>
+            <input type="radio" name="iacordeon" id="iacordeon5">
+            <label for="iacordeon5">Theme</label>
+            <div class="texto-acordeon">
+                Modifican la apariencia de un elemento según el layout y módulo.
+                <a onclick="mostrarImagen('theme')" class="enlace">Ejemplo</a>
+            </div>
+        </div>
+    </div>
+    <!--  -->
+    <!-- DIVs para las imágenes de ejemplo -->
+    <div class="ejemplo" id="base">
+        <img src="images/base.png" alt="">
+    </div>
+    <div class="ejemplo" id="layout">
+        <img src="images/layout.png" alt="">
+    </div>
+    <div class="ejemplo" id="module">
+        <img src="images/module.png" alt="">
+    </div>
+    <div class="ejemplo" id="state">
+        <img src="images/state.png" alt="">
+    </div>
+    <div class="ejemplo" id="theme">
+        <img src="images/theme.png" alt="">
+    </div>
+    <!--  -->
+    <!-- DIV para el texto final -->
+    <div class="l-texto-final">
+        <h3>Ventajas y Desventajas de la Metodología <strong>SMACSS</strong></h3>
+        <br>
+        <p><strong>SMACSS</strong> es una arquitectura bastante documentada y tiene en cuenta muchos posibles cambios, aun así:</p>
+        <br>
+        <br>
+        <p>Algunas ventajas de <strong>SMACSS:</strong></p>
+        <br>
+        <p>Organización simple de carpetas
+            <br>Organización simple de clases
+        </p>
+        <br>
+        <br>
+        <p>Algunas desventajas como:</p>
+        <br>
+        <p>Uso de ID como selector (Rendimiento)
+            <br>Uso del nombre de la etiqueta como selector (SEO)
+        </p>
+    </div>
+    <!--  -->
+    <!-- DIV para el pie de página con las referencias -->
+    <div class="l-pie tema-pie">
+        <h3>Referencias</h3>
+        <div class="l-texto-pie">
+            <p><a href="http://smacss.com/book/" target="blank">Smacss.com</a> - Web oficial de SMACSS de Jonathan Snook</p>
+            <p><a href="https://picodotdev.github.io/blog-bitix/2021/01/las-metodologias-oocss-bem-y-smacss-para-organizar-los-estilos-css/" target="blank">Blog Bitix</a> - Metodologías para organizar estilos CSS, Artículo</p>
+            <p><a href="https://medium.com/williambastidasblog/metodolog%C3%ADas-o-arquitecturas-css-oocss-bem-smacss-itcss-atomic-design-a1a3cfbfa6c9" target="blank">Medium.com</a> - Metodologías o Arquitecturas CSS, Artículo</p>
+            <p><a href="https://undefined.sh/evolucion-de-las-arquitecturas-de-css/" target="blank">Undefined.sh</a> - Evolución de las Arquitecturas y Metodologías de CSS, Artículo</p>
+            <p><a href="https://www.youtube.com/watch?v=tUldrlfIGb4">Video de Eduardo Fierro</a> - Video explicativo en YouTube</p>
+            <br>
+            <br>
+            <div class="l-linea-final">
+                <p>Este sitio web fue diseñado aplicando la metodología SMACSS.</p>
+                <p>Trabajo realizado por: Dayana Valero, Angel Rocha y Miguel Chivata</p>
+            </div>
+        </div>
+    </div>
+    <!--  -->
+</body>
+
+</html>
+<script>
+    // Función para mostrar las imágenes de ejemplo cuando se hace clic en el link Ejemplo al final de cada párrafo.
+    function mostrarImagen(idObjeto) {
+        $('#' + idObjeto).show();
+    }
+
+    // Función para ocultar las imágenes de ejemplo cuando se hace clic por fuera de la imagen.
+    $(document).mouseup(function(e) {
+        var container = $(".ejemplo");
+        if (!container.is(e.target) && container.has(e.target).length === 0) {
+            container.hide();
+        }
+    });
+</script>

@@ -1,0 +1,36 @@
+/*
+    En este archivo se suelen manejar los cambios de estado de los módulos.
+    
+    Por lo general se utilizan nombres que incluye el prefijo is-, como .is-hide o .is-show.
+
+    En nuestro caso debido a que estamos llamando los inputs empezando por su contenedor acordeón, preferimos no usar el prefijo .is-
+*/
+
+.acordeon label:before {
+    font-family: 'FontAwesome';
+    content: '\f067';
+    font-weight: bolder;
+    float: right;
+}
+
+.acordeon input:checked+label:before {
+    font-family: 'FontAwesome';
+    content: '\f00d';
+    transition: 0.5s;
+}
+
+.acordeon input:checked~.texto-acordeon {
+    height: auto;
+    color: #fff;
+    font-size: 16px;
+    padding: 20px;
+    transition: 0.5s;
+}
+
+.acordeon input:checked~.texto-acordeon .enlace {
+    font-weight: bolder;
+    color: #a9def9;
+    text-decoration: underline;
+    cursor: pointer;
+    transition: 0.5s;
+}
